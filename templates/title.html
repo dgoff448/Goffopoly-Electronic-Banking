@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Monopoly</title>
+    <style type='text/css'>
+        body {
+            background: #BFDBAE;
+            border: 100;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <img src='img/MonopolyLogo.png' width='800'/>
+        <p style='font-size:150%;'>v.2.0.0</p>
+        <br />
+        <p style='font-size:500%;'>Name: </p>
+        <form action='/play'>
+            <input id='nameText' type='text' name='Name' style="height:100px;font-size:32pt;" />
+            <input onclick='nameCheck()' type='submit' name='action' value='Ready Up' style="font-size: 32px;  height: 100px;  width: 300px" />
+        </form>
+        <script src="jsFunctions/nameCheck.js"></script> 
+
+    </center>
+</body>
+</html>

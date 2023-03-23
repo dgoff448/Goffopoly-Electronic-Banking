@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Monopoly</title>
+    <body style="background-color:#BFDBAE;">
+</head>
+
+<body>
+    <center>
+
+        <img src='img/MonopolyLogo.png' width='800'/>
+        <br />
+
+        <p style='font-size:500%;'> {0}:    ${1} </p>
+        <p style='font-size:500%;'>How much do you want to pay {2}?</p>
+        <form action='/play'>
+            <input type='hidden' name='info' value='{0}:{1}:{2}' />
+            <p style='font-size:200%;'>Amount (No Decimal. e.g. 1250)</p>
+            <input type="number" pattern="[0-9]*" name='Amount' size='25' style="height:100px;font-size:32pt;"/> <br><br>
+            <input type='submit' name='action' value='Pay' style="font-size: 32px;  height: 100px;  width: 300px" />
+        </form>
+
+    </center>
+</body>
+</html>
